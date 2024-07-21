@@ -1,0 +1,33 @@
+<div class='grid grid-cols-1 lg:grid-cols-2 h-screen'>
+    <div class='hidden lg:block h-screen mt-12'>
+        <div class='grid grid-cols-2 lg:grid-cols-2 h-1/2 ml-40 mt-32'>
+        <img class="size-40" src="assets/cloudy-cloud-svgrepo-com.svg" alt="image not found">
+        <img class="size-40" src="assets/comet-svgrepo-com.svg" alt="image not found">
+        <img class="size-40" src="assets/cuckoo-clock-svgrepo-com.svg" alt="image not found">
+        <img class="size-40" src="assets/light-bulb-idea-svgrepo-com.svg" alt="image not found">
+        </div>
+       <div class=' ml-12 mr-12 text-center items-center'>
+           <p class='font-extrabold font-sans text-2xl'>"Welcome Back! Ready to Continue Your Journey? 
+           Log in Now and Pick Up Where You Left Off!"</p>
+       </div>
+   </div>
+   <div class="flex flex-col mt-72 drop-shadow-lg  items-center">
+       <h1 class="font-extrabold text-2xl">Sign In</h1>
+
+       <p class="text-left pt-3 w-80 text-base ">Username</p>
+       <input type="text" placeholder="Enter Username" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 
+        dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-80 mb-2"
+        [(ngModel)]="username"  />
+
+       <p class="text-left w-80 text-base ">Password</p>
+       <input type="text" placeholder="Password" class="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 
+        dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 w-80 mb-2"
+        [(ngModel)]="password"  />
+
+       <button class="text-white bg-gray-700 hover:bg-gray-950 focus:ring-4 focus:ring-zinc-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 
+         dark:hover::bg-gray-950 focus:outline-none dark:focus::bg-gray-950 w-80 " (click)="login()">Sign In</button>
+        <p class="text-red-500">{{errorMessage}}</p>
+       <p>Don't have an account? <a class="underline" href="/signup">Sign up</a></p>
+   </div>
+  
+</div>

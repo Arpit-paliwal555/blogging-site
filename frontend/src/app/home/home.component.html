@@ -1,0 +1,10 @@
+<app-header></app-header>
+<div>
+
+<div class="flex flex-col items-center w-full ">
+<div *ngFor="let blog of blogs">
+    <app-blogcard [title]="blog.title" [content]="blog.content" [blogId]="blog.id" [publishedDate]="blog.date"></app-blogcard>
+</div>
+
+</div>
+</div>
