@@ -1,7 +1,7 @@
 
 # Blogging site
 
-This is a my personel project to create a medium like blogging site which lets the user signup/signin, read blogs, publish a blog and view one's own blogs.
+This is a my personnel project to create a medium like blogging site which lets the user signup/signin, read blogs, publish a blog and view one's own blogs.
 It was made using Spring Boot in the backend and Angular in the frontend.
 
 Spring has dependencies like Lombok, JWT and spring security etc. JPA & Hibernate as the ORM and database is SQL (local).
