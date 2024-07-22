@@ -32,6 +32,9 @@ export class BlogServiceService {
     return this.http.get<Blog>(this.url + '/' + id);
   }
 
+  saveBlog(blog:any):Observable<Blog> {
+    return this.http.post<Blog>(this.url, blog);
+  }
   getUserById(id:Number):Observable<User> {
     return this.http.get<User>(this.urlForUsers +'/' + id);
   }

@@ -11,9 +11,9 @@ import { Router } from '@angular/router';
   styleUrl: './signin.component.css'
 })
 export class SigninComponent {
-  username = '';
-  password = '';
-  errorMessage = '';
+  username:String = '';
+  password:String = '';
+  errorMessage:String = '';
 
   constructor(private authService: AuthService, private router: Router) {
 

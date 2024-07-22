@@ -14,7 +14,7 @@ export class AuthService {
   private token: String|null = null;
   constructor(private http: HttpClient) { }
 
-  authorize(username: string, password: string): Observable<string> {
+  authorize(username: String, password: String): Observable<string> {
     const credentials = { username, password };
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
